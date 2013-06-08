@@ -1,0 +1,6 @@
+{
+  "name": "LEO Address Bar Search",
+  "description": "Adds a 'leo' command to the address bar to quickly look up words in the LEO dictionary.",
+  "version": "1.0",
+  "manifest_version": 2
+}
