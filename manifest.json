@@ -3,10 +3,13 @@
   "description": "Adds a 'leo' command to the address bar to quickly look up words in the LEO dictionary.",
   "version": "1.0",
   "manifest_version": 2,
-  "background": {
-    "scripts": ["js/background.js"]
-  },
+  "permissions": [
+    "tabs"
+  ],
   "omnibox": {
     "keyword": "leo"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
   }
 }
