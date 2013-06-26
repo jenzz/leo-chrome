@@ -47,3 +47,7 @@ td
 	padding:4px 8px;
 	text-align:center
 }
+
+div#status {
+	display: none;
+}
