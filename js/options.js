@@ -48,6 +48,9 @@ function onDictSelected(dict) {
 	// Save to local storage
 	localStorage[KEY] = dict.value;
 
+	// Notify background page
+	chrome.extension.getBackgroundPage().setDefaultSuggestion(dict.value);
+
 	// Give user some feedback
 	var status = document.getElementById("status");
 	fade("in", status, 500);
