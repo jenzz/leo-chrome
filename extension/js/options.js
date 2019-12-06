@@ -28,7 +28,7 @@ function loadCurrentDict() {
 	}
 
 	// Fall back to German-English
-	localStorage[KEY] = "ende";
+	localStorage[KEY] = "englisch-deutsch";
 	dicts[0].checked = true;
 }
 
