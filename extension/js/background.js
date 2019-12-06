@@ -3,14 +3,14 @@ var BASE_URL = "http://dict.leo.org";
 
 // Human readable languages
 var DICTS = {
-	"ende" : "English",
-	"frde" : "French",
-	"esde" : "Spanish",
-	"itde" : "Italian",
-	"chde" : "Chinese",
-	"rude" : "Russian",
-	"ptde" : "Portuguese",
-	"plde" : "Polish"
+	"englisch-deutsch" : "English",
+	"französisch-deutsch" : "French",
+	"spanisch-deutsch" : "Spanish",
+	"italienisch-deutsch" : "Italian",
+	"chinesisch-deutsch" : "Chinese",
+	"russisch-deutsch" : "Russian",
+	"portugiesisch-deutsch" : "Portuguese",
+	"polnisch-deutsch" : "Polish"
 };
 
 // User's current selection from options page
@@ -19,7 +19,7 @@ var currentDict;
 (function init() {
 	// Set default dict to German-English
 	if(currentDict === undefined) {
-		setDefaultSuggestion("ende");
+		setDefaultSuggestion("englisch-deutsch");
 	}
 })();
 
@@ -39,7 +39,7 @@ function search(text) {
 	text = encodeURIComponent(text);
 
 	// Build URL
-	var url = BASE_URL + "/" + currentDict + "/#/search=" + text;
+	var url = BASE_URL + "/" + currentDict + "/" + text;
 
 	// Let's go!
 	navigateToUrl(url);
